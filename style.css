@@ -1,10 +1,15 @@
-body{
-    font-family: Roboto, sans-serif;
-    margin:0;
+.dashboard-container {
+    flex: 1;
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
-    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
 }
 
 .header{
@@ -13,60 +18,50 @@ body{
     justify-content: end;
     align-items: center;
 }
-
 .logo{
-    height: 160px;
+    height: 140px;
     width: auto;
 }
-
-.login-card{
-    flex: 1;
+.card-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
 }
 
-.login-card-main{
-    display: flex;
-    justify-content:space-evenly;
-    align-items: start;
-    flex-direction: column;
-    width: 250px;
-    height: 250px;
-    border: 1px solid #ccc;
-    padding: 8px 25px;
+.card {
+    width: 280px;
+    height: 200px;
     border-radius: 10px;
+    padding: 20px;
     background-color: #f9f9f9;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    
-}
-
-
-input{
-    border: 1px solid #dddd;
-    border-radius: 8px;
-    padding: 8px 24px;
-    width: 195px;
-}
-
-
-button{
-    background: #3882F6;
-    cursor: pointer;
-    padding: 6px 30px;
-    color: #F9FAF8;
-    font-weight: 600;
-    /*font-size: 18px;
-    
-    margin-top: 15px;*/
-    border: 2px solid #F9FAF8;
-    border-radius: 8px;
-}
-
-
-
-.footer{
-    display:flex;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    margin: 0 0 10px 0;
+    color: #3882F6;
+}
+
+.card p {
+    margin: 0;
+    text-align: center;
+    color: #666;
 }
