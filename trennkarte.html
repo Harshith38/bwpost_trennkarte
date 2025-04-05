@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trennkarte Erstellen</title>
-    <link rel="stylesheet" href="bwpost.css">
+    <link rel="stylesheet" href="trennkarte.css">
 </head>
 <body>
     <div class="container">
@@ -14,18 +14,26 @@
                 <label>Kunde einlesen oder<br>weitere Labels drucken:</label>
                 <input type="text" id="kunde-nummer" class="kunde-nummer">
             </div>
-
+            
             <div class="frame1">
                 <div class="status-label">Ready to scan</div>
             </div>
 
-            <div class="content4">
-                <div class="system-info">
-                    <span class="destop-name">name of destop</span>
-                    <span class="date-time">current time</span>
-                </div>
-                <div class="update-info">
-                    <span class="last-update">Letztes Update: </span>
+            <div class="content3">
+                
+                <div class="number-buttons">
+                    <button class="number-button" data-value="1">1</button>
+                    <button class="number-button" data-value="2">2</button>
+                    <button class="number-button" data-value="3">3</button>
+                    <button class="number-button" data-value="4">4</button>
+                    <button class="number-button" data-value="5">5</button>
+                    <button class="number-button" data-value="6">6</button>
+                    <button class="number-button" data-value="7">7</button>
+                    <button class="number-button" data-value="8">8</button>
+                    <button class="number-button" data-value="9">9</button>
+                    <button class="number-button clear" data-value="clear">←</button>
+                    <button class="number-button" data-value="0">0</button>
+                    <button class="number-button" data-value="enter">Enter</button>
                 </div>
             </div>
         </div>
@@ -34,9 +42,11 @@
         <div class="content2">
             <div class="frame2">
                 <div class="current-frame">
+                    <div class="current-customer-number">0000</div>
                     <div class="current-customer-label">None</div>
                 </div>
                 <div class="previous-frame">
+                    <div class="previous-customer-number">0000</div>
                     <div class="previous-customer-label">None</div>
                 </div>
             </div>
@@ -47,19 +57,34 @@
         </div>
 
         <!-- Right Section - Print Labels -->
-        <div class="content3">
+        <div class="print-container">
+            
+
+            <!-- Adding 6 print label buttons -->
             <div class="print-labels-header">Weitere Labels drucken:</div>
-            <div class="number-buttons">
-                <button class="number-button">1</button>
-                <button class="number-button">2</button>
-                <button class="number-button">3</button>
-                <button class="number-button">4</button>
-                <button class="number-button">5</button>
-                <button class="number-button">6</button>
+            <div class="print-label-buttons">
+                <button class="print-button">1</button>
+                <button class="print-button">2</button>
+                <button class="print-button">3</button>
+                <button class="print-button">4</button>
+                <button class="print-button">5</button>
+                <button class="print-button">6</button>
+            </div>
+            
+            <div class="content4">
+                <div class="system-info">
+                    <span class="destop-name">name of destop</span>
+                    <span class="date-time">current time</span>
+                </div>
+                <div class="update-info">
+                    <span class="last-update">Letztes Update: </span>
+                </div>
             </div>
         </div>
+        
+        
     </div>
 
-    <script src="bwpost.js"></script>
+    <script src="trennkarte.js"></script>
 </body>
 </html>

@@ -15,8 +15,9 @@ body{
 }
 
 .logo{
-    height: 160px;
+    height: 60px;
     width: auto;
+    padding: 15px;
 }
 
 .login-card{
