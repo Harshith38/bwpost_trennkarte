@@ -1,16 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Sample tour data for autocomplete
     const tourSuggestions = [
-        "T001 - Berlin Route",
-        "T002 - Hamburg Express",
-        "T003 - Munich Delivery",
-        "T004 - Cologne Distribution",
-        "T005 - Frankfurt Circuit",
-        "T006 - Stuttgart Route",
-        "T007 - Düsseldorf Express",
-        "T008 - Leipzig Delivery",
-        "T009 - Dresden Loop",
-        "T010 - Hannover Distribution"
+        "Tour-P2-sMail",
+        "R-ZAK-T-4",
+        "R-ZAK-T-3",
+        "R-ZAK-T-2",
+        "R-ZAK-T-1",
+        "R-7870"
     ];
     
     // Storage for warenausgang data
