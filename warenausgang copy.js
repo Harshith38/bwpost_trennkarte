@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const idToCancel = cancelOrderInput.value;
         
         if (!idToCancel) {
-            alert('Bitte geben Sie eine ID zum Stornieren.');
+            alert('Bitte geben Sie eine ID ein zum Stornieren.');
             return;
         }
         
@@ -379,6 +379,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const wagenCell = document.createElement('td');
             wagenCell.textContent = groupData.entries.length;
             row.appendChild(wagenCell);
+
+            
             
             // Tag
             const tagCell = document.createElement('td');
@@ -402,10 +404,10 @@ document.addEventListener('DOMContentLoaded', function() {
         // In a real implementation, this would use a library like SheetJS to create Excel files
         
         // Example of how you might implement this with a library:
-        
+        /*
         const wb = XLSX.utils.table_to_book(document.querySelector('.bericht-table'));
         XLSX.writeFile(wb, 'Versandbericht_' + new Date().toISOString().slice(0,10) + '.xlsx');
-        
+        */
     }
     
     function exportToPDF() {
@@ -413,11 +415,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // In a real implementation, this would use a library like jsPDF to create PDF files
         
         // Example of how you might implement this with a library:
-        
+        /*
         const doc = new jsPDF();
         doc.autoTable({ html: '.bericht-table' });
         doc.save('Versandbericht_' + new Date().toISOString().slice(0,10) + '.pdf');
-        
+        */
     }
     
     // Load any existing data when page loads
