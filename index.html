@@ -14,20 +14,27 @@
 
     <div class="login-card">
         <div class="login-card-main">
-        Please Login 
-        <div class="username">
+            <select name="" id="">
+                <option value="EN">EN</option>
+                <option value="DE">DE</option>
+                <option value="IT">IT</option>
+            </select>
+
+            <p>Please Login</p>
+        
+        <div class="username_div">
             <!-- <label for="floatingInput">Email address</label>-->
-            <input type="email" class="form-control" id="floatingInput" placeholder="Username">
+            <input type="email" name="username" class="username" id="floatingInput" placeholder="Username">
             
         </div>
         
-        <div class="password">
+        <div class="password_div">
             <!--<label for="floatingPassword">Password</label>-->
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="password" name="password" class="password" id="floatingPassword" placeholder="Password">
             
         </div>
 
-        <div class="forgot-pass"> <a href="#"> forgot password?</a></div>
+        <div class="forgot-pass"> <a class="forgot_pass_anchor" href="#"> forgot password?</a></div>
 <!--
         <div class="remember-me">
             <input type="checkbox" name="remember-me" id="floatingRememberMe">
@@ -41,6 +48,6 @@
     <div class="footer">
         Copyright © 2025 Sai Malka, BWPOST GmbH & Co. KG
     </div>
-
+    <script src="login.js"></script>
 </body>
 </html>
