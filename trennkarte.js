@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log("Type of searched ID:", typeof barcodeValue);
 
         if (!barcodeValue) {
-            statusLabel.textContent = 'Please scan a barcode';
+            statusLabel.textContent = 'Bitte scannen Sie einen Kundenbarcode';
             return;
         }
 
@@ -72,11 +72,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Enable verification mode
             verificationMode = true;
-            statusLabel.textContent = 'Scan the printed label to verify';
+            statusLabel.textContent = 'Scannen Sie das gedruckte Etikett, um zu überprüfen';
             statusLabel.style.backgroundColor = 'Yellow';
             statusLabel.style.color = 'black';
         } else {
-            statusLabel.textContent = `No customer found for barcode: ${barcodeValue}`
+            statusLabel.textContent = `Kein Kunde für Barcode: ${barcodeValue} gefunden!!`
             statusLabel.style.backgroundColor = 'Red';
             statusLabel.style.color = 'White';;
         }
@@ -90,17 +90,17 @@ document.addEventListener('DOMContentLoaded', function() {
         if (customerMatch) {
             const verifiedCustomer = customerMatch.CustomerName;
             if (verifiedCustomer === currentCustomer) {
-                statusLabel.textContent = 'Verification successful! Ready for next scan.';
+                statusLabel.textContent = 'Verifizierung erfolgreich! Bereit für den nächsten Scan.';
                 statusLabel.style.backgroundColor = 'Green';
                 statusLabel.style.color = 'White';
                 verificationMode = false;
             } else {
-                statusLabel.textContent = 'Verification failed! Customer mismatch.';
+                statusLabel.textContent = 'Fehler! Der Kunde stimmt nicht überein.';
                 statusLabel.style.backgroundColor = 'Red';
                 statusLabel.style.color = 'White';
             }
         } else {
-            statusLabel.textContent = `No customer found for barcode: ${barcodeNumber}`
+            statusLabel.textContent = `Kein Kunde für Barcode: ${barcodeNumber} gefunden!!`
             statusLabel.style.backgroundColor = 'Red';
             statusLabel.style.color = 'White';;
         }
